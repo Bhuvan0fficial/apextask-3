@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Quiz & Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Quiz & Image Gallery</h1>
+  </header>
+
+  <section id="quiz">
+    <h2>Quiz Time!</h2>
+    <div id="question-container"></div>
+    <p id="score-display">Score: 0</p>
+    <button id="next-btn">Next</button>
+  </section>
+
+  <section id="carousel">
+    <h2>Image Carousel</h2>
+    <div class="carousel">
+      <img id="carousel-img" src="p1.jpg" alt="Gallery Image">
+      <div class="carousel-controls">
+        <button onclick="prevImage()">Prev</button>
+        <button onclick="nextImage()">Next</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="api-data">
+    <h2>Live Jokes</h2>
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="joke"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
